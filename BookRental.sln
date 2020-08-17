@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookRental", "BookRental\BookRental.csproj", "{BB0E2784-8ABF-4415-87D2-9FDDEA7ABF15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookRental.Core", "BookRental.Core\BookRental.Core.csproj", "{6E7D8916-7314-4820-B743-7AFE3FCF7EDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB0E2784-8ABF-4415-87D2-9FDDEA7ABF15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0E2784-8ABF-4415-87D2-9FDDEA7ABF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0E2784-8ABF-4415-87D2-9FDDEA7ABF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0E2784-8ABF-4415-87D2-9FDDEA7ABF15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E7D8916-7314-4820-B743-7AFE3FCF7EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E7D8916-7314-4820-B743-7AFE3FCF7EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E7D8916-7314-4820-B743-7AFE3FCF7EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E7D8916-7314-4820-B743-7AFE3FCF7EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
