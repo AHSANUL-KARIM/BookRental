@@ -4,21 +4,35 @@
     ViewBag.Title = "Details";
 }
 
-<div>
-    <h3>Genre Details</h3>
-    <hr/>
-    <fieldset disabled>
-        <div class="row" style="padding-bottom: 5px; padding-top:5px;">
-            <div class="col-md-2">
-                @Html.LabelFor(m => m.Name, htmlAttributes:new {@class= "control-label"})
-            </div>
-            
-            <div class="col-md-10">
-                @Html.TextBoxFor(m => m.Name, new {@class = "form-control"})
-            </div>
-        </div>
-    </fieldset>
-</div>
+<table id="genreItem">
+    <thead>
+    <tr><td>Name</td></tr>
+    </thead>
+    
+    <tbody></tbody>
+</table>
+
+<script type="text/template" id="genre-template">
+    <td><%= Name  %></td>
+</script>
+
+
+
+@* <div> *@
+@*     <h3>Genre Details</h3> *@
+@*     <hr/> *@
+@*     <fieldset disabled> *@
+@*         <div class="row" style="padding-bottom: 5px; padding-top:5px;"> *@
+@*             <div class="col-md-2"> *@
+@*                 @Html.LabelFor(m => m.Name, htmlAttributes:new {@class= "control-label"}) *@
+@*             </div> *@
+@*              *@
+@*             <div class="col-md-10"> *@
+@*                 @Html.TextBoxFor(m => m.Name, new {@class = "form-control"}) *@
+@*             </div> *@
+@*         </div> *@
+@*     </fieldset> *@
+@* </div> *@
 
 <br/>
 
@@ -26,3 +40,9 @@
     @Html.Partial("_BackToListButtonPartial")
     @Html.Partial("_EditButtonPartial", Model.Id)
 </p>
+
+<script src="../../Scripts/js/lib/jquery-min.js"></script>
+<script src="../../Scripts/js/lib/underscore-min.js"></script>
+<script src="../../Scripts/js/lib/backbone-min.js"></script>
+<script src="../../Scripts/js/lib/json2.js"></script>
+<script src="../../Scripts/js/main.js"></script>

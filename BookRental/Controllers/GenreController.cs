@@ -28,7 +28,7 @@ namespace BookRental.Controllers
             return View();
         }
 
-        [HttpPost]
+        [HttpPut]
         public ActionResult Create(Genre genre)
         {
             if (ModelState.IsValid)
@@ -40,6 +40,7 @@ namespace BookRental.Controllers
             return View();
         }
         
+        [HttpGet]
         public ActionResult Details(int? id)
         {
             if (id == null)

@@ -5,25 +5,57 @@
 }
 
 
-@using (@Html.BeginForm())
-{
-@Html.AntiForgeryToken()
-<div class="form-horizontal">
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <script src="../../Scripts/js/lib/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+    
+    
+    <div id="app">
         <h3>Create New Genre</h3>
+        <div id="genreList"></div>
         <hr />
         
         <div class="form-group">
-            @Html.LabelFor(m => m.Name, htmlAttributes: new { @class="control-label col-md-2"})
-            <div class="col-md-10">
-                @Html.EditorFor(m => m.Name, new {htmlAttributes = new {@class="form-control"}})
-                @Html.ValidationMessageFor(m => m.Name, "", new {@class = "text-danger"})
-            </div>
+            <label>Name:</label>
+            <input type="text" class="form-control" id="Name" />
+            <input id="addGenre" type="submit" value="Create" class="btn btn-sm btn-success" />
+
         </div>
-        
     </div>
+    
     <div>
-        
-        <input name="Name" type="submit" value="create" class="btn btn-sm btn-success"/>
         @Html.Partial("_BackToListButtonPartial")
     </div>
-}
+    
+    
+    <script type="text/template" id="genre-template">
+        <div class="view item genre">
+            <label><%- Name %></label>
+            
+        </div>
+    </script>
+    
+    
+    
+    
+    <script src="../../Scripts/js/lib/jquery-min.js"></script>
+    <script src="../../Scripts/js/lib/underscore-min.js"></script>
+    <script src="../../Scripts/js/lib/backbone-min.js"></script>
+    <script src="../../Scripts/js/lib/json2.js"></script>
+    <script src="../../Scripts/js/main.js"></script>
+    <script src="../../Scripts/js/global.js"></script>
+    </body>
+</html>
+
+
+

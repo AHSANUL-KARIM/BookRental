@@ -7,6 +7,9 @@
 
 <h2>Genre</h2>
 
+
+
+
 @Html.Partial("_CreateButtonPartial")
 
 <table class="table table-condensed table-hover">
@@ -15,19 +18,26 @@
             @Html.DisplayNameFor(m => m.Name)
         </th>
     </tr>
-    
+
     @foreach (var item in Model)
     {
         <tr>
             <td>
                @Html.DisplayFor(m => item.Name)
             </td>
-            
+
             <td>
                 @Html.Partial("_TableButtonPartial", new IndividualButtonPartial
-        { GenreId = item.Id 
+        { GenreId = item.Id
         })
             </td>
         </tr>
     }
 </table>
+
+
+<script src="../../Scripts/js/lib/jquery-min.js"></script>
+<script src="../../Scripts/js/lib/underscore-min.js"></script>
+<script src="../../Scripts/js/lib/backbone-min.js"></script>
+<script src="../../Scripts/js/lib/json2.js"></script>
+<script src="../../Scripts/js/main.js"></script>
