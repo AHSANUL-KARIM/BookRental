@@ -74,3 +74,9 @@ C:\Users\ahsan\RiderProjects\BookRental\BookRental\obj\Debug\BookRental.csproj.C
 C:\Users\ahsan\RiderProjects\BookRental\BookRental\obj\Debug\BookRental.csproj.CopyComplete
 C:\Users\ahsan\RiderProjects\BookRental\BookRental\obj\Debug\BookRental.dll
 C:\Users\ahsan\RiderProjects\BookRental\BookRental\obj\Debug\BookRental.pdb
+C:\Users\ahsan\RiderProjects\BookRental\BookRental\bin\System.Net.Http.Formatting.dll
+C:\Users\ahsan\RiderProjects\BookRental\BookRental\bin\System.Web.Http.dll
+C:\Users\ahsan\RiderProjects\BookRental\BookRental\bin\System.Web.Http.WebHost.dll
+C:\Users\ahsan\RiderProjects\BookRental\BookRental\bin\System.Net.Http.Formatting.xml
+C:\Users\ahsan\RiderProjects\BookRental\BookRental\bin\System.Web.Http.xml
+C:\Users\ahsan\RiderProjects\BookRental\BookRental\bin\System.Web.Http.WebHost.xml

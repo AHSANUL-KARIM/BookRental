@@ -17,7 +17,7 @@ namespace BookRental.RepositoryPattern
             DataSet ds = dblayer.Show_data();
             DataTable dt = ds.Tables[0];
             List<Genre> genres = new List<Genre>();
-
+            
             foreach (DataRow row in dt.Rows)
             {
                 Genre genre = new Genre();
@@ -25,10 +25,8 @@ namespace BookRental.RepositoryPattern
                 genre.Name = (string)row["Name"];
                 genres.Add(genre);
             }
-
+            
             return genres;
-
-
         }
 
         public void Add(Genre genre)
